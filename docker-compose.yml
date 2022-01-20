@@ -11,6 +11,8 @@ services:
 
   drupal:
     image: drupal:9-apache
+    depends_on:
+      - database
     ports:
       - 8080:80
     environment:
