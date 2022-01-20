@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  database:
+    image: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=password
+      - MARIADB_USER=user
+      - MARIADB_PASSWORD=password
+      - MARIADB_DATABASE=drupal
+
+  drupal:
+    image: drupal:9-apache
+    ports:
+      - 8080:80
+    environment:
+      - MARIADB_USER=user
+      - MARIADB_PASSWORD=password
+      - MARIADB_DATABASE=drupal
+      - DATABASE_HOST=database
+    volumes:
+      - ./drupal/modules:/var/www/html/modules
+      - ./drupal/profiles:/var/www/html/profiles
+      - ./drupal/themes:/var/www/html/themes
+      - ./drupal/sites:/var/www/html/sites
+    restart: always
