@@ -16,4 +16,7 @@ Start it up
 docker-compose up
 ```
 
-In a browser go to localhost:8080
+For drupal, in a browser go to localhost:3000
+Once drupal is initialized, articles created in drupal will get picked up by eleventy
+
+For eleventy, in a browser go to localhost:8080/articles to see articles created by drupal
