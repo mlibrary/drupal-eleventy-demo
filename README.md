@@ -10,13 +10,24 @@ Make everything in the drupal directory writeable by `www-data`.
 ```
 sudo chgrp -R www-data drupal/*
 ```
+Install node modules for eleventy
+```
+docker-compose run --rm web npm install
+```
 
 Start it up
 ```
-docker-compose up
+docker-compose up -d
 ```
 
-For drupal, in a browser go to localhost:3000
-Once drupal is initialized, articles created in drupal will get picked up by eleventy
+For drupal, in a browser go to `localhost:3000`
+Choose the standard set up for drupal.
+Once drupal is initialized, Click "Extend" in the top menu. Enable the "JSON:API" and "Serialization" modules
 
-For eleventy, in a browser go to localhost:8080/articles to see articles created by drupal
+Then create an article by going to "Content"-->"Add content"-->"Article". Content created in Articles created in drupal will get picked up by eleventy
+
+For eleventy, you'll probably have to restart the container. So do the following again:
+```
+docker-compose up -d
+```
+In a browser go to `localhost:8080/articles` to see articles created by drupal
