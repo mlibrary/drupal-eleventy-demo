@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("./src/style.css");
   //mrio: might want to try this to get hot reloading, but
   //it is not necessary to get stuff to work
   //eleventyConfig.setBrowserSyncConfig({
@@ -9,5 +10,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "dist",
     },
+    markdownTemplateEngine: "njk",
   };
 };

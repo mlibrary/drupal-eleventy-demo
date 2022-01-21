@@ -1,2 +1,3 @@
 eleventy/node_modules/
 drupal/sites/default/files/
+/eleventy/dist/
