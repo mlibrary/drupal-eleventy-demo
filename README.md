@@ -1,5 +1,9 @@
 # drupal-eleventy-demo
+liberally taken from these two tutorials:
+* Build an eleventy site in 3 minutes: https://www.youtube.com/watch?v=BKdQEXqfFA0
+* https://github.com/spinspire/11ty-drupal
 
+## Developer Set-up
 Clone the repo and cd into the repo directory
 ```
 git clone git@github.com:mlibrary/drupal-eleventy-demo.git
