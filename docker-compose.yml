@@ -3,6 +3,9 @@ version: '3.1'
 services:
   database:
     image: mariadb
+    volumes:
+      - database:/var/lib/mysql
+        #- ./drupal/starter_drupal.sql:/docker-entrypoint-initdb.d/starter_drupal.sql
     environment:
       - MARIADB_ROOT_PASSWORD=password
       - MARIADB_USER=user
@@ -10,27 +13,31 @@ services:
       - MARIADB_DATABASE=drupal
 
   drupal:
-    image: drupal:9-apache
+    build: drupal/.
     depends_on:
       - database
     ports:
-      - 3000:80
+      - 3333:80
     environment:
       - MARIADB_USER=user
       - MARIADB_PASSWORD=password
       - MARIADB_DATABASE=drupal
       - DATABASE_HOST=database
+      - DRUPAL_HASH_SALT='drupal_hash_salt'
     volumes:
       - ./drupal/modules:/var/www/html/modules
       - ./drupal/profiles:/var/www/html/profiles
-      - ./drupal/themes:/var/www/html/themes
       - ./drupal/sites:/var/www/html/sites
+      - ./drupal/composer.json:/opt/drupal/composer.json
     restart: always
 
-  web: 
-    build: eleventy/.
-    ports: 
-    - "8080:8080"
-    volumes:
-      - ./eleventy/.:/app
-    command: npm run start
+  #web: 
+    #build: eleventy/.
+    #ports: 
+    #- "8888:8080"
+    #volumes:
+      #- ./eleventy/.:/app
+    #command: npm run start
+
+volumes:
+  database:

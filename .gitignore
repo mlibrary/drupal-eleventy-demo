@@ -1,3 +1,7 @@
 eleventy/node_modules/
-drupal/sites/default/files/
 /eleventy/dist/
+drupal/sites/default/files/css/
+drupal/sites/default/files/php/
+drupal/sites/default/files/js
+drupal/sites/default/files/styles
+
