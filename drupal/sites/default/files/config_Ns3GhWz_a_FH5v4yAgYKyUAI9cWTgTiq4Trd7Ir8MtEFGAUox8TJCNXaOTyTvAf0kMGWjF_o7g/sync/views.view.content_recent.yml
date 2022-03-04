@@ -1,4 +1,4 @@
-uuid: d7d56cc9-bbca-4c67-bb9a-4b4a03a3a627
+uuid: 22e52a9f-0799-4da9-b9f1-ab5af195846b
 langcode: en
 status: true
 dependencies:
@@ -287,7 +287,7 @@ display:
           required: true
           entity_type: node
           entity_field: uid
-          plugin_id: minimal
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       use_more: false

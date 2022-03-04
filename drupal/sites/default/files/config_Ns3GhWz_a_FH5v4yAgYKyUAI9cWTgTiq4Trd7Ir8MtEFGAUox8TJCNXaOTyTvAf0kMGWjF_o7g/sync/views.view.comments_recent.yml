@@ -1,4 +1,4 @@
-uuid: 9e62b6fd-f2e7-4a8f-bb86-c3844c6ea52e
+uuid: e62aaed1-6eaa-43d6-a542-4156456bc47c
 langcode: en
 status: true
 dependencies:
@@ -57,7 +57,7 @@ display:
           id: node
           table: comment_field_data
           required: true
-          plugin_id: minimal
+          plugin_id: standard
       fields:
         subject:
           id: subject

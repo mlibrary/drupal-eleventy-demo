@@ -1,4 +1,4 @@
-uuid: 36217f9f-82ca-408f-9be0-20ff5ec87b6f
+uuid: f70b8771-2b96-4e60-a130-afb704feda77
 langcode: en
 status: true
 dependencies:
@@ -849,7 +849,7 @@ display:
           required: false
           entity_type: comment
           entity_field: uid
-          plugin_id: minimal
+          plugin_id: standard
       filter_groups:
         operator: AND
         groups:

@@ -1,4 +1,4 @@
-uuid: 15181a87-295e-4fef-8d6b-17bc05b4fd46
+uuid: fcba5b0b-0edc-4727-b9d0-f68e23903724
 langcode: en
 status: true
 dependencies:
@@ -561,7 +561,7 @@ display:
           field: uid
           admin_label: author
           required: true
-          plugin_id: minimal
+          plugin_id: standard
       show_admin_links: false
       filter_groups:
         operator: AND

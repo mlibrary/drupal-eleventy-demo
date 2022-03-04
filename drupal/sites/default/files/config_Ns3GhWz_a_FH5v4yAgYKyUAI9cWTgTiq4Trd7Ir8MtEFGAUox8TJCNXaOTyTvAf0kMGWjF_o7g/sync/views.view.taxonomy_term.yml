@@ -1,4 +1,4 @@
-uuid: 9b75f1f7-8093-4995-9c1c-c26b54212371
+uuid: 7aca0e40-5bfb-4c33-ac52-7d3212be23a4
 langcode: en
 status: true
 dependencies:
@@ -73,7 +73,7 @@ display:
           table: taxonomy_index
           field: sticky
           order: DESC
-          plugin_id: minimal
+          plugin_id: standard
           relationship: none
           group_type: group
           admin_label: ''

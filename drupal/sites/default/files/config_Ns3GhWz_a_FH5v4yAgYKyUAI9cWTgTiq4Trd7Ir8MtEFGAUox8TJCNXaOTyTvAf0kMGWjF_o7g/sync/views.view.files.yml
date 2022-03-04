@@ -1,4 +1,4 @@
-uuid: 28fe2bca-e923-4448-8bf3-4ec1e85da4a3
+uuid: ed2e8f8a-62e3-402b-9815-ba9e74ce0f86
 langcode: en
 status: true
 dependencies:
@@ -912,7 +912,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: minimal
+          plugin_id: standard
         module:
           id: module
           table: file_usage
@@ -961,7 +961,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: minimal
+          plugin_id: standard
         count:
           id: count
           table: file_usage

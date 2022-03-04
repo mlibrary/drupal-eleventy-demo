@@ -1,4 +1,4 @@
-uuid: 566acabb-0eec-43e5-9fbc-48f8d603ccd1
+uuid: 865c0b36-79fc-4182-82d9-0fc871c3a221
 langcode: en
 status: true
 dependencies:
@@ -239,7 +239,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: minimal
+          plugin_id: standard
         severity:
           id: severity
           table: watchdog
@@ -338,7 +338,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: minimal
+          plugin_id: standard
         timestamp:
           id: timestamp
           table: watchdog
@@ -650,7 +650,7 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: minimal
+          plugin_id: standard
       title: 'Recent log messages'
       header: {  }
       footer: {  }
@@ -675,7 +675,7 @@ display:
           group_type: group
           admin_label: User
           required: false
-          plugin_id: minimal
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       filter_groups:

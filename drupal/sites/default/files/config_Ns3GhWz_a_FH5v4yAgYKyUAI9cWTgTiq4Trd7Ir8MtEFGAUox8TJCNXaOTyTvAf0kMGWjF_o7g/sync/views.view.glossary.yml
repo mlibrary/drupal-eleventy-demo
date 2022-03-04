@@ -1,4 +1,4 @@
-uuid: 24347508-ccf9-48e5-a2ac-8b80cefd75fc
+uuid: 9710fd63-b028-496e-a11c-cf09ab753dfd
 langcode: en
 status: false
 dependencies:
@@ -266,7 +266,7 @@ display:
           id: uid
           table: node_field_data
           field: uid
-          plugin_id: minimal
+          plugin_id: standard
           relationship: none
           group_type: group
           admin_label: author
