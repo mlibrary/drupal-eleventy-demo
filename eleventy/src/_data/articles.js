@@ -9,7 +9,7 @@ const fs = require("fs");
 async function getData() {
   let articles = [];
   // JSON API endpoint
-  let url = `${site.parent}/jsonapi/node/article`;
+  let url = `${site.parent}/jsonapi/node/page`;
   do {
     const response = await fetch(url);
     const json = await response.json();
